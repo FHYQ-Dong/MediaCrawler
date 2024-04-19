@@ -28,7 +28,7 @@ class BiliCsvStoreImplement(AbstractStore):
         Returns: eg: data/bilibili/search_comments_20240114.csv ...
 
         """
-        return f"{self.csv_store_path}/{crawler_type_var.get()}_{store_type}_{utils.get_current_date()}.csv"
+        return f"{self.csv_store_path}/{crawler_type_var.get()}_{store_type}_{utils.get_current_time_dot()}.csv"
 
     async def save_data_to_csv(self, save_item: Dict, store_type: str):
         """
@@ -128,7 +128,7 @@ class BiliJsonStoreImplement(AbstractStore):
         Returns:
 
         """
-        return f"{self.json_store_path}/{crawler_type_var.get()}_{store_type}_{utils.get_current_date()}.json"
+        return f"{self.json_store_path}/{crawler_type_var.get()}_{store_type}_{utils.get_current_time_dot()}.json"
 
     async def save_data_to_json(self, save_item: Dict, store_type: str):
         """

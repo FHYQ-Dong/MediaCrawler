@@ -16,7 +16,7 @@ IP_PROXY_POOL_COUNT = 2
 IP_PROXY_PROVIDER_NAME = "kuaidaili"
 
 # 设置为True不会打开浏览器（无头浏览器），设置False会打开一个浏览器（小红书如果一直扫码登录不通过，打开浏览器手动过一下滑动验证码）
-HEADLESS = True
+HEADLESS = False
 
 # 是否保存登录状态
 SAVE_LOGIN_STATE = True
@@ -37,10 +37,10 @@ CRAWLER_MAX_NOTES_COUNT = 20
 MAX_CONCURRENCY_NUM = 4
 
 # 是否开启爬图片模式, 默认不开启爬图片
-ENABLE_GET_IMAGES = False
+ENABLE_GET_IMAGES = True
 
 # 是否开启爬评论模式, 默认不开启爬评论
-ENABLE_GET_COMMENTS = False
+ENABLE_GET_COMMENTS = True
 
 # 是否开启爬二级评论模式, 默认不开启爬二级评论, 目前仅支持 xhs
 # 老版本项目使用了 db, 则需参考 schema/tables.sql line 287 增加表字段
